@@ -1,66 +1,66 @@
 # 🐑 Simple Ecosystem Simulator
 
+A minimalist retro-style ecosystem simulation featuring reproduction, feeding, sleeping, and a day/night cycle.
 
-Une simulation rétro-épurée d’écosystème avec reproduction, alimentation, sommeil, et cycle jour/nuit.
+Developed with [LÖVE2D](https://love2d.org/), this project provides a foundation for experimenting with entity behaviors in an evolving and autonomous environment.
 
-Développé avec [LÖVE2D](https://love2d.org/), ce projet propose une base pour expérimenter des comportements d'entités dans un environnement évolutif et autonome.
-
-![Miniature](./miniature.png){width=75%}
-
----
-
-## 🎮 Objectif du projet
-
-Simuler la vie de créatures (moutons) dans un environnement basé sur des tuiles (`Tile`), avec des comportements naturels :
-
-- déplacement vers les ressources,
-- sommeil selon le rythme circadien,
-- reproduction conditionnelle (âge, énergie, saison…),
-- liens sociaux (suivi de la mère, partenaire),
-- vieillissement, gestation et naissance.
+![Thumbnail](./miniature.png){width=75%}
 
 ---
 
-## 🧠 Mécaniques implémentées
+## 🎮 Project Goal
 
-- **Rythme jour/nuit** avec horloge mondiale (`WorldClock`)
-- **Saisons** influençant la reproduction
-- **Tuiles de terrain** avec herbe qui pousse et se fait manger
-- **Moutons (`Sheep`)** avec :
-  - besoins (faim, énergie)
-  - genre, âge, gestation
-  - comportement de troupeau (suivi de la mère ou du partenaire)
-  - sommeil (diurne/nocturne)
-- **Visualisation HUD** du temps et des statistiques de population
-- **Liaisons sociales visibles** entre individus (traits colorés)
-- **Modularité comportementale** via répertoires :
-  - `Behavior/` : graze, move, sleep, reproduce, social
-  - `Entity/` : entités du monde (Tile, Sheep)
+Simulate the life of creatures (sheep) in a tile-based environment (`Tile`), with natural behaviors such as:
+
+- movement toward resources,
+- sleep based on circadian rhythm,
+- conditional reproduction (age, energy, season…),
+- social bonds (following the mother or a partner),
+- aging, gestation, and birth.
 
 ---
 
-## 🚀 Lancer le projet
+## 🧠 Implemented Mechanics
 
-### Prérequis
+- **Day/Night cycle** with a global clock (`WorldClock`)
+- **Seasons** influencing reproduction
+- **Terrain tiles** with grass that grows and can be eaten
+- **Sheep (`Sheep`)** featuring:
+  - needs (hunger, energy)
+  - gender, age, gestation
+  - herd behavior (following mother or partner)
+  - sleep patterns (diurnal/nocturnal)
+- **HUD visualization** of time and population statistics
+- **Visible social links** between individuals (colored lines)
+- **Behavioral modularity** through directories:
+  - `Behavior/`: graze, move, sleep, reproduce, social
+  - `Entity/`: world entities (Tile, Sheep)
 
-- [LÖVE2D](https://love2d.org/) (version 11.x recommandée)
+---
 
-### Lancement
+## 🚀 Running the Project
 
-<code> love .</code>
+### Requirements
 
-## 📌 TODO / Améliorations prévues
+- [LÖVE2D](https://love2d.org/) (version 11.x recommended)
 
-- Gestion de la longévité et de la mort
-- Introduction de nouveaux animaux (prédateurs, proies…)
-- Génétique simple (héritage de traits)
-- Météo (influence sur la pousse de l’herbe)
-- Menu interactif + interface clicable
-- Export des données (statistiques, logs de population)
+### Launch
+
+<code>love .</code>
+
+
+## 📌 TODO / TODO / Planned Improvements
+
+- Lifespan and death management
+- Introduction of new animals (predators, prey…)
+- Simple genetics (trait inheritance)
+- Weather system (influence on grass growth)
+- Interactive menu + clickable UI
+- Data export (statistics, population logs)
 
 ## 🧑‍💻 Auteur
 
-Projet initié par Jojopov, pour s’entraîner à la simulation, la logique d’IA naturelle, et la structuration propre en Lua.
+Project initiated by Jojopov, as a training ground for simulation design, natural AI logic, and clean Lua code structure.
 
 ## 🧾 Licence
 
