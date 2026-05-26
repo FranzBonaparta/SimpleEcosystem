@@ -1,3 +1,4 @@
+Project write on my GitLab repository in May 2025
 # 🐑 Simple Ecosystem Simulator
 
 A minimalist retro-style ecosystem simulation featuring reproduction, feeding, sleeping, and a day/night cycle.
